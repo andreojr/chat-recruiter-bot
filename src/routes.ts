@@ -42,8 +42,6 @@ export async function routes(app: FastifyInstance) {
                 created_at: new Date(),
             },
         });
-
-        app.io.emit("update-messages");
     });
 
 }
