@@ -2,9 +2,9 @@
   "name": "chat-recruiter-bot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/server.js",
   "engine": {
-    "node": "18"
+    "node": "18.15.0"
   },
   "scripts": {
     "dev": "npx tsx watch src/server.ts",
