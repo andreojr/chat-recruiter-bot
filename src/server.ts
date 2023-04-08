@@ -1,8 +1,7 @@
-import dotenv from "dotenv";
-import botTelegram from "./botTelegram";
+import dotenv from "dotenv/config";
 import app from "./app";
+import botTelegram from "./botTelegram";
 
-dotenv.config();
 botTelegram.launch();
 app.listen({
     port: process.env.PORT ? Number(process.env.PORT) : 3333,

@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "npx tsx watch src/server.ts",
-    "build": "tsup src",
+    "build": "tsup",
     "start": "node dist/server.js"
   },
   "keywords": [],
