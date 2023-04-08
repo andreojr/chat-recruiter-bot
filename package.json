@@ -1,0 +1,34 @@
+{
+  "name": "chat-recruiter-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engine": {
+    "node": "18"
+  },
+  "scripts": {
+    "dev": "npx tsx watch src/server.ts",
+    "build": "tsup src",
+    "start": "node dist/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^8.2.1",
+    "@prisma/client": "^4.12.0",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.15.0",
+    "fastify-socket.io": "^4.0.0",
+    "telegraf": "^4.12.2",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "prisma": "^4.12.0",
+    "tsup": "^6.7.0",
+    "tsx": "^3.12.6",
+    "types-fastify-socket.io": "^0.0.1",
+    "typescript": "^5.0.3"
+  }
+}
