@@ -1,5 +1,5 @@
 import "dotenv/config";
-import botTelegram from "./telegram";
+import botTelegram from "./botTelegram";
 import app from "./app";
 
 botTelegram.launch();
