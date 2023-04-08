@@ -19,7 +19,7 @@ async function replyMessage(body: BodyReply) {
         },
     });
 
-    app.io.emit("replied");
+    app.io.emit("update-messages");
 }
 
 botTelegram.hears(/.*/g, async (ctx: any) => {
