@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "npx tsx watch src/server.ts",
-    "build": "tsup",
+    "build": "tsc -p .",
     "start": "node dist/server.js"
   },
   "keywords": [],
@@ -26,7 +26,6 @@
   "devDependencies": {
     "@types/node": "^18.15.11",
     "prisma": "^4.12.0",
-    "tsup": "^6.7.0",
     "tsx": "^3.12.6",
     "types-fastify-socket.io": "^0.0.1",
     "typescript": "^5.0.3"
