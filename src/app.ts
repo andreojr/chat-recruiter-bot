@@ -14,7 +14,7 @@ app.register(socket, {
 app.register(routes);
 
 app.ready().then(() => {
-    app.io.on("connection", (socket) => {
+    app.io.on("connection", () => {
         console.log("Usuário conectado!");
     });
 })
