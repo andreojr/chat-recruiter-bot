@@ -14,11 +14,11 @@ app.register(socket, {
 app.register(routes);
 
 app.ready(err => {
-    if (err) console.log(err);
+    if (err) console.log("ERRO DO WEB SOCKET: "+err.message);
 
     app.io.on("connection", () => {
         console.log("Usuário conectado!");
     });
-})
+});
 
 export default app;
